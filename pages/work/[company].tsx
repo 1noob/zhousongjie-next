@@ -117,7 +117,7 @@ const Company: NextPage<CompanyProps> = ({
 
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
-    paths: ['nationbuilder', 'mighty'].map((company) => {
+    paths: [].map((company) => {
       return {
         params: { company },
       };
