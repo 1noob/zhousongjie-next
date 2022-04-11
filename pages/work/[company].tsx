@@ -134,7 +134,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
     props: {
       ...pageData,
       recommendations: workData.recommendations.filter(
-        (r) => r.company.toLowerCase() === company.toLowerCase(),
+        (r: any) => r.company.toLowerCase() === company.toLowerCase(),
       ),
     },
   };

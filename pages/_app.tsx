@@ -9,9 +9,8 @@ import Footer from '@/components/Footer';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const { title, description, thumbnail } = pageProps;
-  const metaTitle = `${title ? `${title} - ` : ''}Alex Carpenter`;
+  const metaTitle = `${title ? `${title} - ` : ''}Zhou SongJie`;
   const metaDescription = description ? description : 'Web Engineer';
-  const metaImage = thumbnail ? thumbnail : '/og/default.png';
   return (
     <>
       <SSRProvider>
@@ -22,14 +21,10 @@ function MyApp({ Component, pageProps }: AppProps) {
           <meta name="og:description" content={metaDescription} />
           <meta httpEquiv="Content-Language" content="en" />
           <meta property="og:type" content="website" />
-          <meta
-            property="og:image"
-            content={`https://alexcarpenter.me${metaImage}`}
-          />
-          <meta name="twitter:site" content="@hybrid_alex" />
-          <meta name="twitter:creator" content="@hybrid_alex" />
+          <meta name="twitter:site" content="@zhousongjie" />
+          <meta name="twitter:creator" content="@zhousongjie" />
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="author" content="Alex Carpenter" />
+          <meta name="author" content="Zhou SongJie" />
           <meta name="theme-color" content="#000000" />
           <link
             rel="apple-touch-icon"

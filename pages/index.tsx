@@ -47,38 +47,32 @@ const Home: NextPage<HomeProps> = ({ date, mdx }) => {
         <h2>About</h2>
         <div className="relative float-right w-1/3 ml-4 md:ml-8 mb-4 md:mb-8 inline-flex rounded-md overflow-hidden">
           <Image
-            src="/img/family.jpeg"
+            src="/img/gdufe.jpeg"
             width={400}
             height={400}
-            alt="My wife, my dog, and I at the park."
+            alt="graduate"
           />
         </div>
         <p>
-          Hey, I&apos;m Alex. A detail oriented user interface engineer
-          interested in CSS architecture, React, TypeScript, design systems, and
-          state machines. Currently working at{' '}
-          <Link href="/work/hashicorp">
-            <a>HashiCorp</a>
-          </Link>
-          , helping build and maintain public-facing HashiCorp websites and web
-          applications with Next.js.
+          周颂杰，2020届广东财经大学计算机科学与技术本科毕业生。
+          热衷于算法竞赛，在校期间加入校 ACM 协会，多次参加 CCPC、ICPC 比赛。
+          算法之外主要学习 Web 开发，擅长 Angular.js、Node.js、SpringBoot、Mysql 等。
+          使用的语言比较杂，算法竞赛的时候用的 C++，开发用的 Java，业余项目喜欢用 Python。
         </p>
         <p>
-          Outside of work I am a self-proclaimed serial hobbyist. Currently
-          interested in <del>fly fishing</del>, <del>RC cars</del>, disc golf,
-          and outdoor cooking{' '}
-          <a href="https://www.instagram.com/alexcarp/">#smokedmeats</a>. Also
-          big fan of everyday tools and gear.
+          毕业后一直在考研中，比较倾向计算机视觉方向，参加过 Kaggle 平台的
+          <a href='https://www.kaggle.com/competitions/classify-leaves'>
+            Classify Leaves
+          </a>、
+          <a href='https://www.kaggle.com/competitions/cowboyoutfits'>
+            CowBoy Outfits Detection
+          </a>
+          等视觉竞赛。
         </p>
         <h2>Colophon</h2>
         <p>
-          This site is built using Next.js, Tailwind CSS, Framer Motion, React
-          Aria, TypeScript, MDX, and hosted using Vercel. Type is set in
-          JetBrains Mono. Feel free to check out the source code on{' '}
-          <a href="https://github.com/alexcarpenter/alexcarpenter-next">
-            Github
-          </a>
-          .
+          本站的技术栈有 Next.js，Tailwind CSS，Framer Motion，React
+          Aria，TypeScript，MDX，在 Vercel 上部署。字体风格为 JetBrains Mono。
         </p>
       </Prose>
     </>

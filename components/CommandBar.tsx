@@ -122,7 +122,7 @@ export default function CommandBar({
       shortcut: ['c', 'g'],
       keywords: 'go-github',
       section: 'Connect',
-      perform: () => window.open('https://github.com/alexcarpenter', '_blank'),
+      perform: () => window.open('https://github.com/1noob/', '_blank'),
     },
     {
       id: 'twitter',
@@ -130,25 +130,16 @@ export default function CommandBar({
       shortcut: ['c', 't'],
       keywords: 'go-twitter',
       section: 'Connect',
-      perform: () => window.open('https://twitter.com/hybrid_alex', '_blank'),
+      perform: () => window.open('https://twitter.com/zhousongjie/', '_blank'),
     },
     {
-      id: 'linkedin',
-      name: 'LinkedIn',
-      shortcut: ['c', 'l'],
-      keywords: 'go-linkedin',
+      id: 'bilibili',
+      name: 'Bilibili',
+      shortcut: ['c', 'b'],
+      keywords: 'go-bilibili',
       section: 'Connect',
       perform: () =>
-        window.open('https://www.linkedin.com/in/imalexcarpenter/', '_blank'),
-    },
-    {
-      id: 'instagram',
-      name: 'Instagram',
-      shortcut: ['c', 'i'],
-      keywords: 'go-instagram',
-      section: 'Connect',
-      perform: () =>
-        window.open('https://www.instagram.com/alexcarp/', '_blank'),
+        window.open('https://space.bilibili.com/5289092/', '_blank'),
     },
   ];
   return (

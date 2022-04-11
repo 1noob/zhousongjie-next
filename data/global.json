@@ -24,23 +24,19 @@
   "footer": [
     {
       "label": "Github",
-      "href": "https://github.com/alexcarpenter"
+      "href": "https://github.com/1noob"
     },
     {
       "label": "Twitter",
-      "href": "https://twitter.com/hybrid_alex"
+      "href": "https://twitter.com/zhousongjie"
     },
     {
-      "label": "Instagram",
-      "href": "https://www.instagram.com/alexcarp/"
-    },
-    {
-      "label": "LinkedIn",
-      "href": "https://www.linkedin.com/in/imalexcarpenter/"
+      "label": "Bilibili",
+      "href": "https://space.bilibili.com/5289092"
     },
     {
       "label": "Email",
-      "href": "mailto:im.alexcarpenter@gmail.com"
+      "href": "mailto:zhouzhou.plays@gmail.com"
     }
   ]
 }

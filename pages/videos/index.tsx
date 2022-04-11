@@ -55,10 +55,10 @@ const Videos: NextPage<VideoProps> = ({ title, description, videos }) => {
         </ul>
         <div className="mt-8 text-center">
           <ExternalLink
-            href="https://www.youtube.com/channel/UC2jJoQlzvLPvnYfowAEVaOg?sub_confirmation=1"
+            href="https://space.bilibili.com/5289092"
             hostname={false}
           >
-            Subscribe on YouTube
+            Subscribe on Bilibili
           </ExternalLink>
         </div>
       </Section>

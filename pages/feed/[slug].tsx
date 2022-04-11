@@ -31,16 +31,6 @@ const FeedPage: React.FC<FeedPageProps> = ({ frontMatter, mdx }) => {
         <span role="separator" aria-orientation="vertical">
           &#183;
         </span>{' '}
-        <a
-          target="_blank"
-          rel="noreferrer noopener"
-          href={`https://twitter.com/search?${new URLSearchParams({
-            q: `https://alexcarpenter.me/feed/${frontMatter.slug}`,
-          })}`}
-          className="underline hover:no-underline"
-        >
-          Discuss on Twitter
-        </a>
       </p>
     </>
   );

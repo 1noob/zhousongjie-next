@@ -44,92 +44,92 @@ const Work: NextPage<WorkProps> = ({
     <>
       <Intro title={title} description={description} />
 
-      <Section heading="Experience">
-        <div className="grid sm:grid-cols-2 gap-4">
-          {experience.map((job, index) => {
-            if (index === 0) {
-              return (
-                <article
-                  key={index}
-                  className="relative flex justify-between items-center p-4 rounded-md sm:col-span-2 bg-gradient-to-r from-[#844FBA] to-[#2E71E5]"
-                >
-                  <div>
-                    <h3>
-                      {job.link ? (
-                        <Link href={job.link}>
-                          <a className="after:absolute after:inset-0 underline hover:no-underline text-white">
-                            {job.company}
-                          </a>
-                        </Link>
-                      ) : (
-                        job.company
-                      )}
-                    </h3>
-                    <p className="mt-0.5 text-sm text-white text-opacity-90">
-                      {job.title}
-                      <br />
-                      {job.start} - {job.end}
-                    </p>
-                  </div>
-                  <svg
-                    className="flex-shrink-0"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 106.9 113.1"
-                    width="60"
-                    fill="white"
-                  >
-                    <path d="M44.5 0L0 25.7v61.7l16.7 9.7V35.3l27.8-16z" />
-                    <path d="M62.3 0v49.2H44.5V30.8l-16.7 9.7v62.9l16.7 9.7v-49h17.8v18.2l16.8-9.6v-63z" />
-                    <path d="M62.3 113.1l44.6-25.7V25.7l-16.8-9.6v61.7l-27.8 16z" />
-                  </svg>
-                </article>
-              );
-            }
-            return (
-              <article
-                key={index}
-                className={cx(
-                  'relative p-4 rounded-md',
-                  'dark:bg-gray-800',
-                  'bg-gray-200',
-                )}
-              >
-                <h3>
-                  {job.link ? (
-                    <Link href={job.link}>
-                      <a className="after:absolute after:inset-0 underline hover:no-underline">
-                        {job.company}
-                      </a>
-                    </Link>
-                  ) : (
-                    job.company
-                  )}
-                </h3>
-                <p
-                  className={cx(
-                    'mt-0.5 text-sm',
-                    'text-gray-600',
-                    'dark:text-gray-300',
-                  )}
-                >
-                  {job.title}
-                  <br />
-                  {job.start} - {job.end}
-                </p>
-              </article>
-            );
-          })}
+      {/*<Section heading="Experience">*/}
+      {/*  <div className="grid sm:grid-cols-2 gap-4">*/}
+      {/*    {experience.map((job, index) => {*/}
+      {/*      if (index === 0) {*/}
+      {/*        return (*/}
+      {/*          <article*/}
+      {/*            key={index}*/}
+      {/*            className="relative flex justify-between items-center p-4 rounded-md sm:col-span-2 bg-gradient-to-r from-[#844FBA] to-[#2E71E5]"*/}
+      {/*          >*/}
+      {/*            <div>*/}
+      {/*              <h3>*/}
+      {/*                {job.link ? (*/}
+      {/*                  <Link href={job.link}>*/}
+      {/*                    <a className="after:absolute after:inset-0 underline hover:no-underline text-white">*/}
+      {/*                      {job.company}*/}
+      {/*                    </a>*/}
+      {/*                  </Link>*/}
+      {/*                ) : (*/}
+      {/*                  job.company*/}
+      {/*                )}*/}
+      {/*              </h3>*/}
+      {/*              <p className="mt-0.5 text-sm text-white text-opacity-90">*/}
+      {/*                {job.title}*/}
+      {/*                <br />*/}
+      {/*                {job.start} - {job.end}*/}
+      {/*              </p>*/}
+      {/*            </div>*/}
+      {/*            <svg*/}
+      {/*              className="flex-shrink-0"*/}
+      {/*              xmlns="http://www.w3.org/2000/svg"*/}
+      {/*              viewBox="0 0 106.9 113.1"*/}
+      {/*              width="60"*/}
+      {/*              fill="white"*/}
+      {/*            >*/}
+      {/*              <path d="M44.5 0L0 25.7v61.7l16.7 9.7V35.3l27.8-16z" />*/}
+      {/*              <path d="M62.3 0v49.2H44.5V30.8l-16.7 9.7v62.9l16.7 9.7v-49h17.8v18.2l16.8-9.6v-63z" />*/}
+      {/*              <path d="M62.3 113.1l44.6-25.7V25.7l-16.8-9.6v61.7l-27.8 16z" />*/}
+      {/*            </svg>*/}
+      {/*          </article>*/}
+      {/*        );*/}
+      {/*      }*/}
+      {/*      return (*/}
+      {/*        <article*/}
+      {/*          key={index}*/}
+      {/*          className={cx(*/}
+      {/*            'relative p-4 rounded-md',*/}
+      {/*            'dark:bg-gray-800',*/}
+      {/*            'bg-gray-200',*/}
+      {/*          )}*/}
+      {/*        >*/}
+      {/*          <h3>*/}
+      {/*            {job.link ? (*/}
+      {/*              <Link href={job.link}>*/}
+      {/*                <a className="after:absolute after:inset-0 underline hover:no-underline">*/}
+      {/*                  {job.company}*/}
+      {/*                </a>*/}
+      {/*              </Link>*/}
+      {/*            ) : (*/}
+      {/*              job.company*/}
+      {/*            )}*/}
+      {/*          </h3>*/}
+      {/*          <p*/}
+      {/*            className={cx(*/}
+      {/*              'mt-0.5 text-sm',*/}
+      {/*              'text-gray-600',*/}
+      {/*              'dark:text-gray-300',*/}
+      {/*            )}*/}
+      {/*          >*/}
+      {/*            {job.title}*/}
+      {/*            <br />*/}
+      {/*            {job.start} - {job.end}*/}
+      {/*          </p>*/}
+      {/*        </article>*/}
+      {/*      );*/}
+      {/*    })}*/}
 
-          <div className="grid place-items-center p-4">
-            <ExternalLink
-              href="https://www.linkedin.com/in/imalexcarpenter/"
-              hostname={false}
-            >
-              View LinkedIn
-            </ExternalLink>
-          </div>
-        </div>
-      </Section>
+      {/*    <div className="grid place-items-center p-4">*/}
+      {/*      <ExternalLink*/}
+      {/*        href="https://www.linkedin.com"*/}
+      {/*        hostname={false}*/}
+      {/*      >*/}
+      {/*        View LinkedIn*/}
+      {/*      </ExternalLink>*/}
+      {/*    </div>*/}
+      {/*  </div>*/}
+      {/*</Section>*/}
 
       <Section heading="Interests">
         <ul className="grid grid-cols-2 md:grid-cols-3 gap-4">
@@ -186,13 +186,13 @@ const Work: NextPage<WorkProps> = ({
               })}
           </EntryList>
         </AnimatePresence>
-        {!viewAllRecs && (
-          <div className="mt-8 pl-0 md:pl-28 text-center md:text-left">
-            <Button onClick={() => setViewAllRecs(true)} size="sm">
-              Show more
-            </Button>
-          </div>
-        )}
+        {/*{!viewAllRecs && (*/}
+        {/*  <div className="mt-8 pl-0 md:pl-28 text-center md:text-left">*/}
+        {/*    <Button onClick={() => setViewAllRecs(true)} size="sm">*/}
+        {/*      Show more*/}
+        {/*    </Button>*/}
+        {/*  </div>*/}
+        {/*)}*/}
       </Section>
     </>
   );
