@@ -80,7 +80,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 export const getStaticProps: GetStaticProps = async (context) => {
   const pageData = await import('@/data/videos.json');
   const { tag } = context.params as ContextProps;
-  const filteredVideos = pageData.videos.filter((video) => {
+  const filteredVideos = pageData.videos.filter((video: any) => {
     return video.tags.includes(tag);
   });
   const groupedVideos = groupByYear<Video>(filteredVideos);
