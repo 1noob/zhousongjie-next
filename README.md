@@ -1,4 +1,4 @@
-# alexcarpenter-next
+# zhousongjie-next
 
 > Personal website built with Next.js, TypeScript, next-mdx-remote, and Tailwind CSS.
 
