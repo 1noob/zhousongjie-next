@@ -65,7 +65,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const pageData = await import('@/data/videos.json');
   return {
     paths: Array.from(
-      new Set(pageData.videos.map((file) => file.tags).flat()),
+      new Set(pageData.videos.map((file: any) => file.tags).flat()),
     ).map((tag) => {
       return {
         params: {

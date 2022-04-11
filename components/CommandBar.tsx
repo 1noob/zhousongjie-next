@@ -72,7 +72,7 @@ export default function CommandBar({
       section: 'General',
       perform: () =>
         window.open(
-          'https://github.com/alexcarpenter/alexcarpenter-next',
+          'https://github.com/1noob/zhousongjie-next',
           '_blank',
         ),
     },
